@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Help</title>
+    <style>
+        body {
+            text-align: justify;
+            text-justify: inter-word;
+            background-color: black;
+            color: white;
+            font-family: sans-serif;
+        }
+        
+        h1, h2 {
+            text-align: center;
+        }
+        
+        div {
+            margin: auto;
+            width: 97%;
+        }
+        
+        
+        img {
+            max-height: 60px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <h1>Finite State Automata Generator - Help</h1>
+
+    <div>
+
+        <h2>General description:</h2>
+    
+        <p>This application is learning tool designed to help university students and lecturers in modules closely related to automata theory.</p>
+        <p>The application visualises Thompsons Construction, the process of constructing automata from regular expressions, determinising nondeterministic automata and minimising automata.</p>
+        <p>Given a string, the application shows how those automata work, how it checks whether the string is part of the language described by the regular expression.</p>
+        <p>For more information on the algorithms used see <a href="https://en.wikipedia.org/wiki/Thompson%27s_construction">Thompsons Construction (Regex to NFA)</a> and <a href="https://en.wikipedia.org/wiki/Powerset_construction">Power Set Construction (NFA to DFA)</a></p>
+        
+    </div>
+    
+    <div>
+    
+        <h2>Abbreviations:</h2>
+        
+        <p>FSA - Finite State Automata</p>
+        <p>regex - Regular Expression</p>
+        <p>NFA - Non-deterministic finite state automata</p>
+        <p>DFA - Deterministic finite state automata</p>
+    
+    </div>
+    
+    <div>
+
+        <h2>How to use it?</h2>
+
+        <p>Type in a regular expression and click Generate to start Thompsons Construction.</p>
+        <p>See the generation process through (see playback coontrols below) and press the next button to progress to determinising.</p>
+        <p>To see if a string (word) is accepted by the automata, click 'Automata' in the menu bar, and click the 'test a word' button. Then type in the word at the bottom.</p>
+
+    </div>
+    
+    <div>
+        
+        <h2>File menu:</h2>
+
+        <p>New: Opens a blank document</p>
+        <p>Open: Opens a regular expression saved previously and generates the non-deterministic, and deterministic automaton as well.&nbsp;</p>
+        <p>Save: Saves the current regular expression, and it&#39;s automaton.</p>
+        <p>Print: Prints the current stage of the automaton we are viewing right now.</p>
+        <p>Close: Closes the current tab, or whole program if no tab is open.</p>
+
+    </div>
+    
+    <div>
+        
+        <h2>Toolbar:</h2>
+
+        <img src="help_generate.png" alt="Help Toolbar 1">
+        <p>1 - Textbox for regular expression: Input where the user can type in a regular expression</p>
+        <p>2 - Generate: The application generates the automaton for the given regular expression, and starts the animation.</p>
+        <img src="help_playbackcontrols.png" alt="Help Toolbar 2">
+        <p>3 - A slider to change the frame. The start of the slider is thee start of the visualisation, the end is the end.</p>
+        <p>7 - Play/Pause: Starts playing the animation of the Thompsons construction, goes trough the steps of the NFA and DFA builds up.</p>
+        <p>6, 8 - Faster/Slower: Changes the speed of the animation.</p>
+        <p>5, 9 - Jump Forward/Back: Jumps to the next step of the construction.</p>
+        <p>4, 10 - Jump to the Start/End.</p>
+        
+    </div>
+    
+</body>
+
+</html>
